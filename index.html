@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- fonts awesome for icons -->
+    <script src="https://kit.fontawesome.com/dd6301d1c5.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <title>MY PORTFOLIO</title>
+</head>
+<body>
+
+    <div class="modes">
+      <i class="bi bi-moon-fill mode-icon" id="toggledark"></i>
+    </div>
+
+    <div id="wrapper">
+        <div class="contain">
+
+        <div class="navbar navbar-expand-lg my_navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                
+                <img src="./images/logo.png" alt="logo" width="250px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <span class="navbar-text">
+                <ul class="navbar me-auto mb-2 mb-lg-0 navbar_btn">
+                    <li class="nav_item"><a class="nav-link" href="#projects"><b class="nav_btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Projects</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="#profile-section"><b class="nav_btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Code Profile</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="#education"><b class="nav_btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Education</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="#skills"><b class="nav_btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Skills</b></a></li>
+                    <li class="nav_item"><a class="nav-link" href="#contact"><b class="nav_btn" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact Me</b></a></li>
+                </ul>
+            </span>
+            </div>
+        </div>
+        </div>
+
+        <div class="hero-section">
+
+            <div class="hero-section-left">
+                <div class="hero-section-heading">Hi! Vishwajeet Singh</div>
+                    
+                    <div class="hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+    
+                    <div class="hero-section-description">
+                        <p style="color: gray; font-weight: 600; letter-spacing: 1px;">I'm a Student of B.tech Computer Science. I loves problem solving and have interest in Web Development. Looking forward for great career opportunites.</p>
+                    </div>
+                    
+                    <div class="hero-btn">
+                    <a href="https://www.linkedin.com/in/vishwajeet-singh-696645216" target="_blank"><button class="my-btn hire-btn" id="btn">Hire Me</button></a>
+                    <button class="my-btn" id="btn" onclick="openModal()">View Profile</button>
+                    </div>
+            </div>
+
+            <div class="hero-section-right">
+                <div class="absolute icons icon-dots">
+                    <img src="./images/userAsset/dots.png" alt="" width="90px"/>
+                  </div>
+                  <div class="absolute icons icon-cube">
+                    <img src="./images/userAsset/cube.png" alt="" />
+                  </div>
+                  <div class="absolute icons icon-circle">
+                    <img src="./images/userAsset/circle.png" alt="" />
+                  </div>
+                  <div class="absolute icons icon-zigzag">
+                    <img src="./images/userAsset/zigzags.png" alt="" />
+                  </div>
+                  <div class="absolute icons icon-plus">
+                    <img src="./images/userAsset/plus.png" alt="" />
+                  </div>
+                  <div class="user-image">
+                    <img src="./images/image.jpeg" alt="" class="my_img"/>
+                  </div>
+            </div>
+
+            <div class="gradient">
+              
+            </div>
+
+        </div>
+    </div>
+
+    <div class="project-section" id="projects">
+      <hr>
+        <h2 class="page-header">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card" id="project1">
+                <div class="project-number project-number-right">01</div>
+                <div class="project-content project-content-left">
+
+                    <div class="project-skill-container">
+                        <img class="project-skill" src="./images/HTML.png" alt="" />
+                        <img class="project-skill" src="./images/stack/CSS.png" alt="" />
+                        <img class="project-skill" src="./images/javascript.png" alt="" />
+                    </div>
+
+                    <h2 class="project-heading">Weather app</h2>
+
+                    <p class="project-sub-heading">This project lets you search Github profiles of users. It is made using HTML, CSS and javascript.
+                    </p>
+                    <div class="btn-grp">
+                        <a href="https://vishwa2033.github.io/Weather-App/" target="_blank"><button class="my-btn btn-project">Visit Now</button></a>
+                        <a href="https://github.com/vishwa2033/Weather-App" target="_blank">
+                        <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                        </a>
+                        <a href="https://vishwa2033.github.io/Weather-App/" target="_blank">
+                        <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" id="project2">
+              <div class="project-number project-number-left">02</div>
+              <div class="project-content project-content-right">
+                <div class="project-skill-container">
+                   
+                  <img class="project-skill" src="./images/HTML.png" alt="" /> 
+                  <img class="project-skill" src="./images/stack/CSS.png" alt="" />
+                    <img class="project-skill" src="./images/tailwind.png" alt="" />
+                </div>
+                <h2 class="project-heading">Razor pay</h2>
+                <p class="project-sub-heading">
+                  An amazing mini frontend project made using HTML, CSS and Tailwind.
+                </p>
+                <div class="btn-grp">
+                  <a href="https://tangerine-cannoli-fb570b.netlify.app/" target="_blank"><button class="my-btn btn-project">Visit Now</button></a>
+                  <a href="https://github.com/vishwa2033/Razor-Pay">
+                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                  </a>
+                  <a href="https://tangerine-cannoli-fb570b.netlify.app">
+                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="project-card" id="project3">
+              <div class="project-number project-number-right">03</div>
+              <div class="project-content project-content-left">
+                <div class="project-skill-container">
+                    <img class="project-skill" src="./tech_stack/HTML.png" alt="" />
+                    <img class="project-skill" src="./tech_stack/CSS.png" alt="" />
+                    <img class="project-skill" src="./tech_stack/tailwind.png" alt="" />
+                </div>
+      
+                <h2 class="project-heading"></h2>
+                <p class="project-sub-heading">
+                  An amazing mini frontend project made using HTML, CSS and Tailwind.
+                </p>
+                <div class="btn-grp">
+                  <a href="#" target="_blank"><button class="my-btn btn-project">Visit Now</button></a>
+                  <a href="#" target="_blank">
+                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                  </a>
+                  <a href="https://my-razorpay-clone.netlify.app/" target="_blank">
+                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="project-card" id="project4">
+              <div class="project-number project-number-left">04</div>
+              <div class="project-content project-content-right">
+                <div class="project-skill-container">
+                    <img class="project-skill" src="./tech_stack/HTML.png" alt="" />
+                    <img class="project-skill" src="./tech_stack/CSS.png" alt="" />
+                    <img class="project-skill" src="./tech_stack/javascript.png" alt="" />
+                </div>
+                <h2 class="project-heading"></h2>
+                  <p class="project-sub-heading">
+                    A simple Weather App which shows weather of City.<br>It is made using HTML, CSS and javascript.
+                  </p>
+                  <div class="btn-grp">
+                    <a href="#" target="_blank"><button class="my-btn btn-project">Visit Now</button></a>
+                    <a href="#" target="_blank">
+                      <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                    </a>
+                    <a href="https://sagar-weather.netlify.app/" target="_blank">
+                      <i title="Live Link" class="fa-solid fa-link icon"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <div id="profile-section">
+      <h2 class="profile-header">Coding Profiles</h2>
+
+    <div class="Coding-Profile">
+      <div class="profile">
+        <div class="profile1-img"></div>
+        <h2 style="text-align: center; padding-top: 20px; padding-bottom: 10px; font-weight: 700; letter-spacing: 2px; color: gray;">LeetCode</h2>
+        <p style="color: gray; font-weight: 600; padding: 10px; text-align: center;">This is my LeetCode Profile. I have solved  problems on this platform.</p>
+        <div class="my-profile-btn"><a href="https://leetcode.com/vishu2033/" target="_blank"><button class="my-btn btn-project profile-btn">Check Profile</button></a></div>
+      </div>
+
+      <div class="profile">
+        <div class="profile2-img"></div>
+        <h2 style="text-align: center; font-weight: 700; letter-spacing: 2px; padding-top: 20px; padding-bottom: 10px; color: gray;">GeeksForGeeks</h2>
+        <p style="color: gray; font-weight: 600; padding: 10px; text-align: center;">This is my GeeksForGeeks Profile. I have solved problems on GFG.</p>
+        <div class="my-profile-btn"><a href="https://auth.geeksforgeeks.org/user/singhvishwa2033" target="_blank"><button class="my-btn btn-project profile-btn">Check Profile</button></a></div>
+      </div>
+
+      <div class="profile">
+        <div class="profile3-img"></div>
+        <h2 style="text-align: center; font-weight: 700; letter-spacing: 2px; padding-top: 20px; padding-bottom: 10px; color: gray;">CodeStudio</h2>
+        <p style="color: gray; font-weight: 600; padding: 10px; text-align: center;">This is my CodeStudio Profile. I have solved problems on this platform.</p>
+        <div class="my-profile-btn"><a href="https://www.codingninjas.com/studio/profile/373b94f4-16df-447c-9c5f-76f83e285602" target="_blank"><button class="my-btn btn-project profile-btn">Check Profile</button></a></div>
+      </div>
+    </div>
+    </div>
+
+    <hr style="margin: 0px;">
+
+    <div class="education-section" id="education">
+      <div class="education">
+        <h2 style="color: #e84949; font-weight: 700;">My Education</h2>
+        <br>
+        <h3 style="font-weight: 700;">B.tech (Computer Science)</h3>
+        <P style="font-weight: 600;">2020 - 2024 | 9 Sgpa till now | <span style="color: #e84949; font-weight: 600"><a href="https://bbdu.ac.in/" class="link">BBDU</a></span></P>
+        <br>
+        <h3 style="font-weight: 700;">12th UP Board</h3>
+        <p style="font-weight: 600;">2019 - 2020 | 65% | <span style="color: #e84949; font-weight: 600">GBAIC</span></p>
+        <br>
+        <h3 style="font-weight: 700;">10th CBSE Board</h3>
+        <p style="font-weight: 600;">2016 - 2017 | 86% | <span style="color: #e84949; font-weight: 600">Sant Theresa high school</span></p>
+
+      </div>
+
+      <div class="skills" id="skills">
+        
+        <div style="margin: auto;">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <div class="outer-circle">
+              <div class="circle1">
+                <img src="images/bootstrap.png" style="margin: auto; width: 67%; display: flex; margin-top: 6px;">
+              </div>
+              <div class="circle2">
+                <img src="images/c++.png" style="margin: auto; width: 67%; display: flex; margin-top: 6px;">
+              </div>
+              <div class="circle3">
+                <img src="images/CSS.png" style="margin: auto; width: 65%; display: flex; margin-top: 8px;">
+              </div>
+              <div class="circle4">
+                <img src="images/HTML.png" style="margin: auto; width: 65%; display: flex; margin-top: 8px;">
+              </div>
+              <div class="circle5">
+                <img src="images/c.png" style="margin: auto; width: 67%; display: flex; margin-top: 6px;">
+              </div>
+              <div class="circle6">
+                <img src="images/javascript.png" style="margin: auto; width: 67%; display: flex; margin-top: 6px;">
+              </div>
+
+              <div class="inner-circle">
+                <div class="most-inner-circle">
+                  <div class="circle7">
+                    <img src="images/github.png" style="width: 90%; display: flex; margin: auto; margin-top: 2px;">
+                  </div>
+                  <div class="circle8">
+                    <img src="images/tailwind.png" style="width: 75%; display: flex; margin: auto; margin-top: 5px;">
+                  </div>
+                  <div class="circle9">
+                    <img src="images/vsCode.png" style="width: 65%; display: flex; margin: auto; margin-top: 5px;">                    
+                  </div>
+                  <div class="circle10">
+                    <img src="images/react.png" style="width: 70%; display: flex; margin: auto; margin-top: 7px;">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer id="contact">
+      <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+      </div>
+      <div class="social">
+          <a href="https://www.linkedin.com/in/vishwajeet-singh-696645216" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/singh__vishwa_/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/vishwa2033" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:singhvishwa2033@gmail.com" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p style="color: white; font-weight: 500; text-align: center;">Copyright <i class="fa-solid fa-copyright"></i> 2023 Portfolio. All Rights Reserved.</p>
+  </footer>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    
+    <div class="modal-header">
+      <h1>My Profiles</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+    <div> 
+      <div class="icon-container">
+        <a href="https://www.linkedin.com/in/vishwajeet-singh-696645216" target="_blank" class="modal-icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://leetcode.com/vishu2033/" target="_blank" class="modal-icon" id="leetcode">
+          <img src="images/leetcode.png" width="40px">
+        </a>
+        <a href="https://www.instagram.com/singh__vishwa_/" target="_blank" class="modal-icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/vishwa2033" target="_blank" class="modal-icon" id="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typeData = new Typed(".role", {
+          strings: [
+            "Engineer",
+            "Web Developer",
+            "Student",
+            "Programmer",
+          ],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+
+        var typeData = new Typed(".skill", {
+          strings: [
+            "SKILLS",
+          ],
+          loop: true,
+          typeSpeed: 130,
+          backSpeed: 80,
+          backDelay: 1000,
+        });
+      </script>
+
+      <script src="index.js"></script>
+</body>
+</html>
